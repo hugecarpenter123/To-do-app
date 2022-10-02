@@ -1,0 +1,44 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% include 'base/navbar.html' %}
+
+<div class="window-wrapper">
+    <form action="" method="post" class="">
+        {% csrf_token %}
+        {% for form_el in form %}
+            <div class="row2">
+                <div class="col1">{{form_el.label}}</div>
+                <div class="col2">{{form_el}}</div>
+            </div>
+        {% endfor %}
+        <div class="nav-wrapper">
+            <input type="submit" value="Register" class="bottom-btn login">
+        </div>
+    </form>
+    {{form.errors}}
+    <p id="id_errorMsg" class="errorMsg" style="display:none"></p>
+
+    <p class="sugestion action-caption"><a href="{% url 'login' %}">Already have an account?</a></p>
+</div>
+
+<!--inline js to handle simple error message popping up -->
+<script>
+        errors = document.querySelectorAll('.errorlist')
+        errors.forEach(x=>{
+          x.style['display'] = 'none'
+        })
+
+        errorContent = errors[1].textContent
+        errorMsg = document.querySelector('#id_errorMsg')
+
+        if(errorContent){
+            errorMsg.innerText = errorContent
+            errorMsg.style['display'] = 'block'
+		    setTimeout(() => {
+                errorMsg.style['display'] = 'none'
+		    }, 4000)
+        }
+
+</script>
+
+{% endblock content %}

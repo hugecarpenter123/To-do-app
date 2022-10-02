@@ -1,0 +1,19 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% include 'base/navbar.html' %}
+<div class="window-wrapper">
+    <form action="" method="POST" class="update-form">
+            {% csrf_token %}
+            {% for form_el in form %}
+                <div class="uptade-field">
+                    <h3>{{form_el.label}}</h3>
+                    {{form_el}}
+                </div>
+            {% endfor %}
+            <div class="nav-wrapper">
+                <input type="submit" class="bottom-btn submit" value="Save">
+                <a href="{% url 'tasks' %}" class="bottom-btn back">Go back</a>
+            </div>
+    </form>
+    </div>
+{% endblock content %}

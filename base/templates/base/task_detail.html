@@ -1,0 +1,22 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% include 'base/navbar.html' %}
+{% load static %}
+<div class="window-wrapper">
+    <div class="row">
+        <h3>{{object.title}}</h3>
+    </div>
+    <hr>
+    <div class="row">
+       {{object.description}}
+    </div>
+    <hr>
+    <div class="row">
+       Created: {{object.created}}
+    </div>
+    <div class="footer">
+        <a class="back-btn" href="{% url 'tasks' %}">Back</a>
+        <a href="{% url 'update' object.id %}"><img class="nav-btn" src="{% static 'images/edit.png' %}" alt=""></a>
+    </div>
+</div>
+{% endblock content %}

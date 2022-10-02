@@ -1,0 +1,40 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+{% include 'base/navbar.html' %}
+{% load static %}
+<div class="window-wrapper">
+    <div class="add-new">
+        <!-- <img src='' alt=""> -->
+        <a href="{% url 'create' %}">
+            <img src="{% static 'images/add.png' %}" alt="">
+        </a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="text" name="search-text" placeholder="Search phrase..." value="{{searched}}">
+        <input type="submit" value="Search">
+    </form>
+
+    {% for object in object_list %}
+        <div class="row">
+            <div class="col action-caption"><a href="{% url 'task' object.id %}">{{object}}</a></div>
+            <span>
+                <div class="col {% if object.complete %}complete{% else %}incomplete{% endif %}">{% if object.complete %}complete{% else %}incomplete{% endif %}</div>
+                <div class="col action-caption"><a href="{% url 'update' object.id %}"><img src="{% static 'images/edit.png' %}" alt=""></a></div>
+                <div class="col action-caption"><a href="{% url 'delete' object.id %}"><img src="{% static 'images/delete.png' %}" alt=""></a></div>
+            </span>
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+
+    numberOfRows = document.querySelectorAll('.row').length
+    windowWrapperEl = document.querySelector('.window-wrapper')
+    if(numberOfRows >= 10){
+        windowWrapperEl.style['overflow-y'] = 'scroll'
+    }
+
+</script>
+{% endblock content %}

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: Arial;
+  outline: none;
+}
+
+body {
+  background: linear-gradient(90deg, #ffb672 -50%, #f38925);
+  background-repeat: no-repeat;
+  height: calc(100vh - 60px + 10px);
+}
+
+nav {
+  background: linear-gradient(90deg, #ff9f44 -10%, #fa7e0a );
+  padding: 30px 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li:first-child {
+  font-size: 1.5rem;
+}
+
+nav ul li:last-child:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+

@@ -1,0 +1,268 @@
+.main-wrapper {
+  max-width: 550px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.window-wrapper {
+  padding: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  max-height: 450px;
+}
+/* ---------- row ----------*/
+.row {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row span {
+    display: flex;
+    align-items: center;
+}
+
+.row span .col:last-child {
+    margin-left: 1.1rem;
+}
+
+.row span .col:first-child {
+    margin-right: 1.1rem;
+}
+
+.complete {
+    font-size: 0.8rem;
+    color: green;
+}
+
+.incomplete {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.col img {
+    height: 25px;
+    width: 25px;
+}
+
+/* ---------- xxx ----------*/
+
+/* login system */
+.row2 {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.col1 {
+    width:110px;
+    text-align: left:
+}
+
+.col2 {
+    width: 150px;
+}
+
+.col2 input {
+    padding: 2px 4px;
+}
+
+.login {
+    border: 1px solid #e46f00;
+    background-color: #f38925;
+    color: white;
+}
+
+.sugestion {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* xxxxxxxxxxxxx */
+
+/* ------------------- action for hover --------------------- */
+.action-img {
+    height: 25px;
+    width: 25px;
+    transition: 0.15s;
+}
+
+action-img:hover {
+    transform: scale(1.1);
+}
+
+.action-caption {
+    transition: 0.15s;
+}
+
+.action-caption:hover {
+    transform: scale(1.1);
+}
+
+/* ------------------- xxxxxxxxxxxxxxxxx -------------------- */
+
+.add-new {
+  text-align: center;
+  padding: 0 10px 10px 0;
+  margin: 0 5px;
+  border-bottom: 1px solid grey;
+}
+
+.add-new img {
+    width: 1.7rem;
+    height: 1.7rem;
+    transition: 0.1s;
+}
+
+.add-new img:hover {
+    filter: contrast(0.4);
+}
+
+.add-new img:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+
+/* ------------------- search forms --------------------- */
+
+.ask {
+    margin:0 auto 15px auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-btn {
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+
+.bottom-btn:hover {
+    transform: scale(1.05);
+}
+
+.submit {
+    border: 1px solid #e46f00;
+    background-color: #f38925;
+    margin-right: 5px;
+    color: white;
+}
+
+.back {
+    border: 1px solid black;
+    vmargin-left: 5px;
+}
+
+
+#id_title, #id_description {
+    border: none;
+    padding: 0 4px;
+    font-size: 1rem;
+}
+
+
+.update-form {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+    flex-direction: column;
+    flex: 1;
+}
+
+.search-form-submit {
+    height: 2rem;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #e46f00;
+    border: 1px solid #e46f00;
+}
+
+.search-form {
+  padding: 10px 0 20px 0;
+  display: flex;
+}
+
+.search-form input {
+  border: 1px solid  #e46f00 ;
+}
+
+.search-form input:first-child {
+  /* min-width: 45%; */
+  width: 100%;
+  padding: 0 4px;
+}
+
+.search-form input:last-child {
+  height: 2rem;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: white;
+  color: #e46f00;
+}
+
+/* ------------------- xxxxxxxxxxxx --------------------- */
+
+hr {
+  background-color: lightgrey;
+  border-radius: 40%;
+  margin: 20px auto 20px auto;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-btn {
+    padding: 8px 25px;
+    border: 1px solid #8f009e;
+}
+
+.nav-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    transition: 0.15s;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+.uptade-field {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.uptade-field h3 {
+    min-width: 120px;
+    text-align: left;
+}
+
+/* errors */
+.errorMsg {
+    background-color: red;
+    width: fit-content;
+    margin: auto;
+    padding: 2px 5px;
+    color: white;
+    margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        {% if request.user.is_authenticated %}
+            <li>{{request.user}}</li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+            {% if 'register' in request.path %}
+                <li>Register</li>
+            {% elif 'login' in request.path %}
+                <li>Login</li>
+            {% endif %}
+            <li><a href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+    </ul>
+</nav>
