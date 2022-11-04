@@ -1,12 +1,28 @@
-# To-do_app_Django
+<h2 style="text-align: center">Todo App</h2>
+<p>Application enables adding, deleting and modyfying notes which can be accessed on the main page.
+One user can have few accounts with separate 'to-do' lists but needs to be logged in in order to access them.
+Elements which are not marked as complete are pushed to the top, so that user can see them first. Apart from 
+basic CRUD operations, application supports registration and login systems.</p>
 
-Project is done using HTML, CSS, JavaScript and Python framework Django.
-Application enables adding, deleting and modyfying notes which are stored in a main page.
-One user can have few accounts with separate 'to-do' list but needs to be logged in in order to access them.
-Elements which are not marked as complete are pushed to the top, so that user can see them first.
-Apart from above, application does everything as I had in my vision.
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ilyDdKtKwq4
+" target="_blank"><img src="http://img.youtube.com/vi/ilyDdKtKwq4/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="300" height="2400" border="10" /></a>
 
-To run the project, one needs to do standard Django flow, which is:
--having installed Python and Django
--running code in cmd: 'python manage.py runserver'
--going to local-host adress in the browser
+<h2 style="text-align: center">Used tools</h2>
+<ul>
+  <li>Python</li>
+  <li>frameworks:
+  <ul>
+    <li>Django</li>
+  </ul></li>
+  <li>JavaScript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+<h2 style="text-align: center">How to run</h2>
+
+<p>In order to run the project, one must do standard Django flow:
+-having Python and Django installed
+-running in cmd: 'python manage.py runserver'
+-launching local-host adress in the browser</p>
+
