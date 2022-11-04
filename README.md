@@ -6,15 +6,14 @@ basic CRUD operations, application supports registration and login systems.</p>
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ilyDdKtKwq4
 " target="_blank"><img src="http://img.youtube.com/vi/ilyDdKtKwq4/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="300" height="2400" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="300" height="240" border="10" /></a>
 
 <h2 style="text-align: center">Used tools</h2>
 <ul>
   <li>Python</li>
-  <li>frameworks:
   <ul>
     <li>Django</li>
-  </ul></li>
+  </ul>
   <li>JavaScript</li>
   <li>HTML</li>
   <li>CSS</li>
