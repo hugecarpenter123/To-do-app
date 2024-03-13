@@ -18,10 +18,4 @@ alt="IMAGE ALT TEXT HERE" width="300" height="240" border="10" /></a>
   <li>HTML</li>
   <li>CSS</li>
 </ul>
-<h2 style="text-align: center">How to run</h2>
-
-<p>In order to run the project, one must do standard Django flow:
--having Python and Django installed
--running in cmd: 'python manage.py runserver'
--launching local-host adress in the browser</p>
 
